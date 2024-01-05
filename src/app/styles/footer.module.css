@@ -1,0 +1,105 @@
+.smallFooter {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%;
+  height: 100px; /* You can adjust the height as needed */
+  text-align: center;
+  background-color: #0056b3;
+  color: white; /* If you want to change the text color */
+}
+
+
+
+  .largeFooter {
+    display: none;
+  }
+ 
+  @media (min-width: 1000px) {
+    .smallFooter {
+        display: none;
+    }
+    .largeFooter  {
+        display: block;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #0056b3;
+        color: white;
+        height: 200px;
+       }
+    .footerContainer {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(12, auto);
+      grid-template-rows: 1fr, middle;
+      column-gap: 20px;
+      margin-left: 4.861%;
+      margin-right: 4.861%;
+      font-size: 1rem;
+      line-height: 1.4;
+      font-weight: 650;
+     
+    }
+    .imageHere {
+      grid-column: 2 span 3;
+      grid-row: 1;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .innerNav {
+      grid-column: 5/6;
+      display: flexbox;
+      flex-direction: column;
+      vertical-align: middle;
+      padding: 0;
+      margin: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .socialsMenu {
+      grid-column: 8/9;
+       margin: 0;
+      padding: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+
+    }
+
+    .socialsMenu div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+    }
+
+    .innerNav a {
+    text-decoration: none;
+    color: #ffffff;
+   
+    }
+
+    .innerNav li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .uList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      vertical-align: center;
+      }
+      .icon {
+      margin-top: 10px;
+      color: #28a745;
+          }
+}

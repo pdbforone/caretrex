@@ -1,0 +1,174 @@
+.sectionHero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+  }
+  
+  .heroHeader {
+    font-weight: 700;
+    font-size: 24px; /* Adjusted size for mobile */
+    font-family: 'Open Sans', sans-serif;
+    color: #003366; /* A color that stands out */
+    margin-bottom: 12px; /* Increased space between the title and subtitle */
+  }
+  
+  .heroImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Add whitespace below the image */
+    object-fit: cover; /* Prevents image distortion */
+  }
+  
+  .heroP {
+    font-size: 16px; /* Adjusted font size for mobile */
+    line-height: 1.4;
+    color: #555; /* Slightly muted color for subtitle */
+    padding: 0 20px; /* Increased padding on the sides */
+    margin-bottom: 24px; /* Increased space between subtitle and CTA button */
+    box-sizing: border-box; /* Ensures padding does not cause overflow */
+  }
+
+  .additionalTextContent {
+    display: none;
+  }
+  
+  .flavorButton {
+    font-size: 18px; /* Larger font for easy tapping */
+    padding: 15px 30px;
+    background-color: #28a745; /* Brand's accent color */
+    color: white;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: inline-block; /* Allows margin auto to center the button */
+    width: 80%; /* Or full width depending on design preference */
+    max-width: 300px; /* Maximum width to maintain aesthetics */
+    margin: 20px auto; /* Centers the button */
+    cursor: pointer;
+  }
+
+  /* Hover State */
+.flavorButton:hover {
+  background-color: #3cda5f; /* Lighter Green */
+  transform: scale(1.05); /* Slightly Scale Up */
+}
+
+/* Active State */
+.flavorButton:active {
+  background-color: #217a34; /* Darker Green */
+  border-color: #1c6a2e; /* Darker Border if using */
+  transform: scale(0.95); /* Scale Back */
+}
+
+/* Focus State */
+.flavorButton:focus {
+  outline: 2px solid #ffffff; /* Noticeable Outline for Accessibility */
+}
+  
+  @media (max-width: 480px) {
+    .heroHeader {
+      font-size: 1.5rem; /* Even smaller on mobiles */
+    }
+  
+    .heroP {
+      font-size: 1rem; /* Smaller font size for mobile devices */
+      padding: 0 5px; /* Reduced padding for mobile devices */
+    }
+  
+    .flavorButton {
+      padding: 12px 24px; /* Adjusted padding for smaller screens */
+      font-size: 16px; /* Adjusted font size for smaller screens */
+      width: 90%; /* Increased width for better tap-ability */
+    }
+  }
+  /* ... existing styles ... */
+
+ /* ... existing styles ... */
+
+/* Styles for tablet and larger screens */
+@media (min-width: 620px) {
+  .sectionHero {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    align-items: center;
+    width: 100vw;
+    padding:0%;
+   
+}
+
+  .heroHeader {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px; /* Larger font for tablet */
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin-bottom: 20px; /* Space between header and paragraph */
+  }
+
+  
+  .heroP {
+    display: none; /* Hide the original text for tablets */
+  }
+
+  .imageContainer {
+    grid-column: 1/4;
+    grid-row: 2;
+   
+    margin-left: 1rem;
+}
+  .additionalTextContent {
+    grid-column: 4/7;
+    grid-row: 2;
+    font-family: 'Open Sans', sans-serif;
+    display: block; /* Show additional text */
+    font-size: 20px; /* Larger font size for readability */
+    margin-right: 20px; /* Space before the CTA button */
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .buttonContainer {
+    grid-column: 5;
+    grid-row: 3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+  .flavorButton {
+    padding: 20px 40px; /* Larger button for easier interaction */
+    font-size: 24px; /* Larger font for the button */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: auto; /* Adjust width based on content */
+    max-width: 300px; /* Max width for aesthetics */
+    margin: 0; /* Remove margin to align with text start */
+  }
+    /* Hover State */
+.flavorButton:hover {
+  grid-column: 4/7;
+    grid-row: 3;
+  background-color: #3cda5f; /* Lighter Green */
+  transform: scale(1.05); /* Slightly Scale Up */
+}
+
+/* Active State */
+.flavorButton:active {
+  grid-column: 4/7;
+    grid-row: 3;
+  background-color: #217a34; /* Darker Green */
+  border-color: #1c6a2e; /* Darker Border if using */
+  transform: scale(0.95); /* Scale Back */
+}
+
+}
+
+/* ... existing styles ... */

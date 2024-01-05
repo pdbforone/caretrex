@@ -1,0 +1,114 @@
+.sectionHero {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 10px;
+    align-items: center;
+    width: 100vw;
+    padding:0%;
+   
+}
+
+.heroHeader {
+    font-weight: 700;
+    font: 36px;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+.imageContainer {
+    grid-column: 1 span 2;
+    grid-row: 2;
+    min-width: 33vw;
+    margin-left: 1rem;
+}
+.flavorButton {
+    grid-column: 2/3;
+    grid-row: 3;
+}
+.heroP {
+
+    grid-column: 2/3;
+    grid-row: 2;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+
+    
+.flavorButton {
+    /* Basic Button Style */
+    display: inline-block;
+    height: 50px;
+    padding: 15px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white; /* Text Color */
+    background-color: #28a745; /* Background Color */
+    border: 2px solid #28a745; /* Adjust if border is desired */
+    border-radius: 4px; /* Slightly Rounded Edge */
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth Transition for Hover and Active States */
+    text-align: center; /* Ensuring text is centered */
+}
+
+/* Hover State */
+.flavorButton:hover {
+    background-color: #3cda5f; /* Lighter Green */
+    transform: scale(1.05); /* Slightly Scale Up */
+}
+
+/* Active State */
+.flavorButton:active {
+    background-color: #217a34; /* Darker Green */
+    border-color: #1c6a2e; /* Darker Border if using */
+    transform: scale(0.95); /* Scale Back */
+}
+
+/* Focus State */
+.flavorButton:focus {
+    outline: 2px solid #ffffff; /* Noticeable Outline for Accessibility */
+}
+
+/* Responsive Considerations */
+@media (max-width: 480px) {
+    .flavorButton {
+        padding: 13px 18px; /* Slightly smaller padding for smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+/* Add additional media queries as needed for different screen sizes */
+.heroHeader {
+    font-size: 2.5rem; /* Large screens */
+}
+.heroP {
+    font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+    .heroHeader {
+        font-size: 2rem; /* Slightly smaller on tablets */
+    }
+}
+@media (max-width: 480px) {
+    .heroHeader {
+        font-size: 1.5rem; /* Even smaller on mobiles */
+    }
+    .heroP {
+        font-size: 1rem;
+    }
+}
+

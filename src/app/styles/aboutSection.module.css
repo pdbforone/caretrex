@@ -1,0 +1,95 @@
+.aboutContainer {
+  padding: 0 20px; /* Added padding on the sides */
+  background-color: #f7f7f7;
+  text-align: center; /* Centered text alignment */
+}
+
+.headline {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 40px 0 20px 0; /* Adjusted margin for whitespace */
+  color: #333;
+}
+
+.missionStatement {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px; /* Increased font size for mobile readability */
+  line-height: 1.6;
+  color: #666;
+}
+
+.teamIntroduction {
+  margin-bottom: 20px;
+}
+
+.teamImage {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto;
+  display: block; /* Image block display */
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.teamText {
+  font-size: 16px; /* Adjusted font size for readability */
+  margin-bottom: 20px; /* Space below the team text */
+}
+
+.seoBackground {
+  font-size: 16px;
+  line-height: 1.6; /* Improved line-height for readability */
+  margin-bottom: 30px; /* Adjusted bottom margin for CTA */
+}
+
+.learnMoreLink {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none; /* Removed underline */
+  padding: 10px 20px; /* Adjusted padding for a button-like appearance */
+  display: inline-block; /* Inline block for padding and background */
+  border-radius: 4px;
+  background-color: #e7f5ff; /* Light blue background for the CTA */
+  margin-top: 20px; /* Added top margin for CTA */
+}
+
+/* Larger screen adjustments */
+@media (min-width: 768px) {
+  .aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .headline {
+    font-size: 32px;
+    grid-column: 1 / -1;
+    text-align: left; /* Align text to the left on larger screens */
+  }
+
+  /* Left-align the text for larger screens */
+  .missionStatement,
+  .teamText,
+  .seoBackground {
+    text-align: left;
+  }
+
+  .teamIntroduction {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headline {
+    font-size: 36px; /* Larger font size for larger screens */
+  }
+  .missionStatement,
+  .seoBackground {
+    font-size: 20px; /* Larger font size for larger screens */
+  }
+  .teamText {
+    font-size: 18px; /* Larger font size for larger screens */
+  }
+}

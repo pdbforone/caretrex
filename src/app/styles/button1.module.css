@@ -1,0 +1,46 @@
+.flavorButton {
+    /* Basic Button Style */
+    display: inline-block;
+    height: 50px;
+    padding: 15px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff; /* Text Color */
+    background-color: #28a745; /* Background Color */
+    border: 2px solid #28a745; /* Adjust if border is desired */
+    border-radius: 5px; /* Slightly Rounded Edge */
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth Transition for Hover and Active States */
+    text-align: center; /* Ensuring text is centered */
+}
+
+/* Hover State */
+.flavorButton:hover {
+    background-color: #3cda5f; /* Lighter Green */
+    transform: scale(1.05); /* Slightly Scale Up */
+}
+
+/* Active State */
+.flavorButton:active {
+    background-color: #217a34; /* Darker Green */
+    border-color: #1c6a2e; /* Darker Border if using */
+    transform: scale(0.95); /* Scale Back */
+}
+
+/* Focus State */
+.flavorButton:focus {
+    outline: 2px solid #ffffff; /* Noticeable Outline for Accessibility */
+}
+
+/* Responsive Considerations */
+@media (max-width: 480px) {
+    .flavorButton {
+        padding: 15px 20px; /* Slightly smaller padding for smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+/* Add additional media queries as needed for different screen sizes */

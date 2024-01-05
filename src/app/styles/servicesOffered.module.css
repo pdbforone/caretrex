@@ -1,0 +1,83 @@
+/* Base styles - keep mobile-first approach */
+.container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color */
+  }
+  
+  .heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .serviceCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .serviceImage {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .serviceTitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .serviceDescription {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .concludingStatement {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  /* Larger screen adjustments */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 1200px; /* Maximum width of the content */
+      margin: auto; /* Center the container */
+      padding: 40px 20px; /* More padding on larger screens */
+    }
+  
+    .heading {
+      font-size: 28px; /* Larger font for larger screens */
+      margin: 40px 0; /* More space around the heading */
+    }
+  
+    .serviceCard {
+      display: flex; /* Flex layout for side-by-side image and text */
+      align-items: center; /* Vertically center the content */
+      margin-bottom: 30px; /* Increase space between cards */
+      padding: 20px; /* More padding inside each card */
+    }
+  
+    .serviceImage {
+      width: 80px; /* Larger image for larger screens */
+      margin-right: 20px; /* Space between image and text */
+    }
+  
+    .serviceTitle {
+      font-size: 20px; /* Larger font size for service title */
+    }
+  
+    .serviceDescription {
+      font-size: 18px; /* Slightly larger font size for description */
+    }
+  
+    .concludingStatement {
+      font-size: 18px; /* Larger font size for concluding statement */
+    }
+  }
+  
