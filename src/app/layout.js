@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import  Header  from "./components/header"
 import  Footer  from "./components/footer"
 // The following import prevents a Font Awesome icon server-side rendering bug,
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body className={styles.body1}>
         <Header />
         {children}
+        <SpeedInsights />
         <Footer />
       </body>
       </html>
