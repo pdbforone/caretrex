@@ -539,6 +539,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for a better look */
     vertical-align: middle;
     z-index: 1000;
+  
   }
   
   .cssNav_menu__KiOTZ a {
@@ -566,6 +567,19 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
    display: none;
   }
  
+  @media screen and  ( min-width: 374px) {
+  .cssNav_menu__KiOTZ {
+    padding: 1rem;
+  }
+  .cssNav_menu__KiOTZ a {
+    font-size: 1.2rem;
+  }
+    
+  }
+
+
+
+
   @media screen and (min-width: 768px) {
   
   .cssNav_smallHeader__6ddQt  {
@@ -615,7 +629,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     text-decoration: none;
     color: white;
     padding-left:50px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .cssNav_largeUlist___SRqO span.cssNav_active__aOS53 {
@@ -656,6 +670,15 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 }
 
 /* ... existing styles ... */
+
+@media screen and ( min-width: 1000px) {
+  .cssNav_largeUlist___SRqO {
+    grid-column: 6/9;
+  }
+  .cssNav_largeUlist___SRqO a {
+    font-size: 20px;
+  }
+}
 
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/footer.module.css ***!
@@ -769,6 +792,9 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
+.page_html1__EiqZX {
+  scroll-behavior: smooth;
+}
 .page_body1__40JiS {
     margin: 0;
     padding: 0;

@@ -94,7 +94,7 @@
  /* ... existing styles ... */
 
 /* Styles for tablet and larger screens */
-@media (min-width: 620px) {
+@media screen and (min-width: 620px) {
   .heroSec_sectionHero__zRFrf {
     text-align: center;
     display: grid;
@@ -119,16 +119,6 @@
 
   
   .heroSec_heroP__z7Gok {
-    display: none; /* Hide the original text for tablets */
-  }
-
-  .heroSec_imageContainer__dXc5Y {
-    grid-column: 1/4;
-    grid-row: 2;
-   
-    margin-left: 1rem;
-}
-  .heroSec_additionalTextContent__XTdTW {
     grid-column: 4/7;
     grid-row: 2;
     font-family: 'Open Sans', sans-serif;
@@ -139,6 +129,17 @@
     line-height: 1.4;
     padding: 0 10px;
   }
+  .heroSec_additionalTextContent__XTdTW {
+    display: none;
+  }
+
+  .heroSec_imageContainer__dXc5Y {
+    grid-column: 1/4;
+    grid-row: 2;
+   
+    margin-left: 1rem;
+}
+  
 
   .heroSec_buttonContainer__8nCIK {
     grid-column: 5;
@@ -176,6 +177,89 @@
 }
 
 /* ... existing styles ... */
+@media screen and ( min-width: 745px ) {
+ 
+ .heroSec_heroP__z7Gok {
+  display: none;
+ }
+ 
+ 
+  .heroSec_additionalTextContent__XTdTW {
+    grid-column: 4/7;
+    grid-row: 2;
+    font-family: 'Open Sans', sans-serif;
+    display: block; /* Show additional text */
+    font-size: 20px; /* Larger font size for readability */
+    margin-right: 20px; /* Space before the CTA button */
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+
+}
+
+@media screen and(min-width: 1100px) {
+  .heroSec_sectionHero__zRFrf {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    grid-template-rows: (6, auto); 
+    grid-gap: 10px; 
+    gap: 10px; /* Adjust the gap as needed */
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .heroSec_heroHeader__7iTt7 {
+    grid-column: 1 / -1; /* Spans all 12 columns */
+    grid-row: 1/2;
+    font-size: 36px; /* Larger font for tablet */
+    margin-bottom: 20px; /* Space between header and paragraph */
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .heroSec_imageContainer__dXc5Y {
+    grid-column: 1 / 7; /* Spans first 6 of 12 columns */
+    grid-row: 2;
+    margin-left: 1rem;
+  }
+
+  .heroSec_additionalTextContent__XTdTW {
+    grid-column: 7 / 13; /* Spans last 6 of 12 columns */
+    grid-row: 2;
+    display: block; /* Show additional text */
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    padding: 0 10px;
+    margin-right: 20px;
+  }
+
+  .heroSec_flavorButton__bfv3h {
+    
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: auto;
+    max-width: 300px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .heroSec_buttonContainer__8nCIK {
+    grid-column: 7/13;
+    grid-row: 3/4;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+}
 
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/aboutSection.module.css ***!
@@ -187,10 +271,10 @@
 }
 
 .aboutSection_headline__vseKZ {
+  padding-top: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: bold;
-  margin: 40px 0 20px 0; /* Adjusted margin for whitespace */
   color: #333;
 }
 

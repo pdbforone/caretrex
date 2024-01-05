@@ -78,6 +78,7 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for a better look */
     vertical-align: middle;
     z-index: 1000;
+  
   }
   
   .menu a {
@@ -105,6 +106,19 @@
    display: none;
   }
  
+  @media screen and  ( min-width: 374px) {
+  .menu {
+    padding: 1rem;
+  }
+  .menu a {
+    font-size: 1.2rem;
+  }
+    
+  }
+
+
+
+
   @media screen and (min-width: 768px) {
   
   .smallHeader  {
@@ -153,7 +167,7 @@
     text-decoration: none;
     color: white;
     padding-left:50px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .largeUlist span.active {
@@ -194,3 +208,12 @@
 }
 
 /* ... existing styles ... */
+
+@media screen and ( min-width: 1000px) {
+  .largeUlist {
+    grid-column: 6/9;
+  }
+  .largeUlist a {
+    font-size: 20px;
+  }
+}
