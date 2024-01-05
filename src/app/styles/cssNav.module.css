@@ -204,10 +204,10 @@
     background-color: transparent; /* Maintain readability */
   }
 
-  /* Other styles can be adjusted here as needed */
+ 
 }
 
-/* ... existing styles ... */
+
 
 @media screen and ( min-width: 1000px) {
   .largeUlist {
