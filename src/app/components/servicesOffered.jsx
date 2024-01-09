@@ -4,7 +4,7 @@ export default function ServicesOffered ()  {
         {
           icon: '/rex.jpg', // Replace with your image path
           title: 'Nurse-Assisted Medical Transport',
-          description: 'Specialized transport for hospital visits, therapy sessions, and medical appointments, equipped with necessary medical equipment for continuous care.',
+          description: '- Non-emergency medical transport within Hays: Monday - Friday. Longer transports and trips are available by appointment.',
         },
         // ... other services
       ];
@@ -20,7 +20,7 @@ export default function ServicesOffered ()  {
             </div>
           ))}
           <p className={styles.concludingStatement}>
-            All our services are designed with your health and safety as our top priority...
+            Our services are designed with your health and safety as our top priority.
           </p>
         </section>
       );

@@ -22,15 +22,12 @@ export default function HeroSec() {
   
   
     <p className={styles.heroP}>
-    Ride with ease and expert care at CareTrex. Our certified nurses ensure a seamless and safe journey, wherever you need to go.
+    Ride with ease and expert care from CareTrex. Our team is composed entirely of licensed and enthusiastically professional caregivers. Book a safe and dependable ride today.
     </p> 
     
     <p className={`${styles.heroP} ${styles.additionalTextContent}`}>
-  Step into a world of comfort and professional care for all your transportation needs.
-  At CareTrex, we specialize in providing you with a seamless journey,
-   accompanied by the best medical professionals in the industry.
-  Whether it’s a trip to the doctor's office or a day out,
-   our certified nurses ensure your health and safety are never compromised.
+  
+ Ride with ease and expert care from CareTrex. Our team is composed entirely of licensed and enthusiastically professional caregivers. Book a safe and dependable ride today.
 </p>
   
     <Link href="/Contact" className={styles.buttonContainer}>

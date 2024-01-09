@@ -6,5 +6,6 @@ export function HeroImage() {
       height="250" 
       width="250"
       layout="responsive" 
+      priority={true}
       className={styles.imageLeft}/>
 }

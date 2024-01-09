@@ -7,7 +7,8 @@ export default function About() {
     <section className={styles.aboutContainer}>
       <h2 className={styles.headline}>About Our Company</h2>
       <p className={styles.missionStatement}>
-        We are dedicated to delivering excellence and innovation in our services.
+       CareTrex LLC is a mobile health solutions company serving Western Kansas and beyond!
+         
       </p>
       <div className={styles.teamIntroduction}>
         <Image
@@ -18,10 +19,10 @@ export default function About() {
           height={600}
           className={styles.teamImage}
         />
-        <p className={styles.teamText}>Meet the minds behind our success.</p>
+        <p className={styles.teamText}> Birthed in 2023, we aim to serve the underserved aging and disabled population that is often isolated and/or forgotten.</p>
       </div>
       <p className={styles.seoBackground}>
-        With years of experience in our field, we strive to lead and inspire. <a className={styles.learnMoreLink} href="/about">Learn more about our journey.</a>
+        <a className={styles.learnMoreLink} href="/about">Learn more about our journey.</a>
       </p>
     </section>
   );

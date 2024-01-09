@@ -1,0 +1,508 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/heroSec.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.heroSec_sectionHero__zRFrf {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+  }
+  
+  .heroSec_heroHeader__7iTt7 {
+    font-weight: 700;
+    font-size: 24px; /* Adjusted size for mobile */
+    font-family: 'Open Sans', sans-serif;
+    color: #003366; /* A color that stands out */
+    margin-bottom: 12px; /* Increased space between the title and subtitle */
+  }
+  
+  .heroSec_heroImage__etRCR {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Add whitespace below the image */
+    object-fit: cover; /* Prevents image distortion */
+  }
+  
+  .heroSec_heroP__z7Gok {
+    font-size: 16px; /* Adjusted font size for mobile */
+    line-height: 1.4;
+    color: #555; /* Slightly muted color for subtitle */
+    padding: 0 20px; /* Increased padding on the sides */
+    margin-bottom: 24px; /* Increased space between subtitle and CTA button */
+    box-sizing: border-box; /* Ensures padding does not cause overflow */
+  }
+
+  .heroSec_additionalTextContent__XTdTW {
+    display: none;
+  }
+  
+  .heroSec_flavorButton__bfv3h {
+    font-size: 18px; /* Larger font for easy tapping */
+    padding: 15px 30px;
+    background-color: #28a745; /* Brand's accent color */
+    color: white;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: inline-block; /* Allows margin auto to center the button */
+    width: 80%; /* Or full width depending on design preference */
+    max-width: 300px; /* Maximum width to maintain aesthetics */
+    margin: 20px auto; /* Centers the button */
+    cursor: pointer;
+  }
+
+  /* Hover State */
+.heroSec_flavorButton__bfv3h:hover {
+  background-color: #3cda5f; /* Lighter Green */
+  transform: scale(1.05); /* Slightly Scale Up */
+}
+
+/* Active State */
+.heroSec_flavorButton__bfv3h:active {
+  background-color: #217a34; /* Darker Green */
+  border-color: #1c6a2e; /* Darker Border if using */
+  transform: scale(0.95); /* Scale Back */
+}
+
+/* Focus State */
+.heroSec_flavorButton__bfv3h:focus {
+  outline: 2px solid #ffffff; /* Noticeable Outline for Accessibility */
+}
+  
+  @media (max-width: 480px) {
+    .heroSec_heroHeader__7iTt7 {
+      font-size: 1.5rem; /* Even smaller on mobiles */
+    }
+  
+    .heroSec_heroP__z7Gok {
+      font-size: 1rem; /* Smaller font size for mobile devices */
+      padding: 0 5px; /* Reduced padding for mobile devices */
+    }
+  
+    .heroSec_flavorButton__bfv3h {
+      padding: 12px 24px; /* Adjusted padding for smaller screens */
+      font-size: 16px; /* Adjusted font size for smaller screens */
+      width: 90%; /* Increased width for better tap-ability */
+    }
+  }
+  /* ... existing styles ... */
+
+ /* ... existing styles ... */
+
+/* Styles for tablet and larger screens */
+@media screen and (min-width: 620px) {
+  .heroSec_sectionHero__zRFrf {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+    width: 100vw;
+    padding:0%;
+   
+}
+
+  .heroSec_heroHeader__7iTt7 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px; /* Larger font for tablet */
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin-bottom: 20px; /* Space between header and paragraph */
+  }
+
+  
+  .heroSec_heroP__z7Gok {
+    grid-column: 4/7;
+    grid-row: 2;
+    font-family: 'Open Sans', sans-serif;
+    display: block; /* Show additional text */
+    font-size: 20px; /* Larger font size for readability */
+    margin-right: 20px; /* Space before the CTA button */
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+  .heroSec_additionalTextContent__XTdTW {
+    display: none;
+  }
+
+  .heroSec_imageContainer__dXc5Y {
+    grid-column: 1/4;
+    grid-row: 2;
+   
+    margin-left: 1rem;
+}
+  
+
+  .heroSec_buttonContainer__8nCIK {
+    grid-column: 5;
+    grid-row: 3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+  .heroSec_flavorButton__bfv3h {
+    padding: 20px 40px; /* Larger button for easier interaction */
+    font-size: 24px; /* Larger font for the button */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: auto; /* Adjust width based on content */
+    max-width: 300px; /* Max width for aesthetics */
+    margin: 0; /* Remove margin to align with text start */
+  }
+    /* Hover State */
+.heroSec_flavorButton__bfv3h:hover {
+  grid-column: 4/7;
+    grid-row: 3;
+  background-color: #3cda5f; /* Lighter Green */
+  transform: scale(1.05); /* Slightly Scale Up */
+}
+
+/* Active State */
+.heroSec_flavorButton__bfv3h:active {
+  grid-column: 4/7;
+    grid-row: 3;
+  background-color: #217a34; /* Darker Green */
+  border-color: #1c6a2e; /* Darker Border if using */
+  transform: scale(0.95); /* Scale Back */
+}
+
+}
+
+/* ... existing styles ... */
+@media screen and ( min-width: 745px ) {
+ 
+ .heroSec_heroP__z7Gok {
+  display: none;
+ }
+ 
+ 
+  .heroSec_additionalTextContent__XTdTW {
+    grid-column: 4/7;
+    grid-row: 2;
+    font-family: 'Open Sans', sans-serif;
+    display: block; /* Show additional text */
+    font-size: 20px; /* Larger font size for readability */
+    margin-right: 20px; /* Space before the CTA button */
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+
+}
+
+@media screen and(min-width: 1100px) {
+  .heroSec_sectionHero__zRFrf {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    grid-template-rows: (6, auto); 
+    grid-gap: 10px; 
+    gap: 10px; /* Adjust the gap as needed */
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+  }
+
+  .heroSec_heroHeader__7iTt7 {
+    grid-column: 1 / -1; /* Spans all 12 columns */
+    grid-row: 1/2;
+    font-size: 36px; /* Larger font for tablet */
+    margin-bottom: 20px; /* Space between header and paragraph */
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .heroSec_imageContainer__dXc5Y {
+    grid-column: 1 / 7; /* Spans first 6 of 12 columns */
+    grid-row: 2;
+    margin-left: 1rem;
+    position: relative;
+  }
+
+  .heroSec_additionalTextContent__XTdTW {
+    grid-column: 7 / 13; /* Spans last 6 of 12 columns */
+    grid-row: 2;
+    display: block; /* Show additional text */
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    padding: 0 10px;
+    margin-right: 20px;
+  }
+
+  .heroSec_flavorButton__bfv3h {
+    
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: auto;
+    max-width: 300px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .heroSec_buttonContainer__8nCIK {
+    grid-column: 7/13;
+    grid-row: 3/4;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/aboutSection.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.aboutSection_aboutContainer__k1odA {
+  padding: 0 20px; /* Added padding on the sides */
+  background-color: #f7f7f7;
+  text-align: center; /* Centered text alignment */
+}
+
+.aboutSection_headline__vseKZ {
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.aboutSection_missionStatement__c2pjx {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px; /* Increased font size for mobile readability */
+  line-height: 1.6;
+  color: #666;
+}
+
+.aboutSection_teamIntroduction__robwK {
+  margin-bottom: 20px;
+}
+
+.aboutSection_teamImage__m_eB7 {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto;
+  display: block; /* Image block display */
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.aboutSection_teamText__c0597 {
+  font-size: 16px; /* Adjusted font size for readability */
+ margin-bottom: 20px;
+}
+
+.aboutSection_seoBackground__Aqeko {
+  font-size: 16px;
+  line-height: 1.6; /* Improved line-height for readability */
+  padding-bottom: 30px;
+}
+
+.aboutSection_learnMoreLink__clqOP {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none; /* Removed underline */
+  padding: 10px 20px; /* Adjusted padding for a button-like appearance */
+  display: inline-block; /* Inline block for padding and background */
+  border-radius: 4px;
+  background-color: #e7f5ff; /* Light blue background for the CTA */
+  margin-top: 20px; /* Added top margin for CTA */
+}
+
+/* Larger screen adjustments */
+@media (min-width: 768px) {
+  .aboutSection_aboutContainer__k1odA {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    gap: 40px;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .aboutSection_headline__vseKZ {
+    font-size: 32px;
+    grid-column: 1 / -1;
+    text-align: left; /* Align text to the left on larger screens */
+  }
+
+ 
+
+  /* Left-align the text for larger screens */
+  .aboutSection_missionStatement__c2pjx,
+  .aboutSection_teamText__c0597,
+  .aboutSection_seoBackground__Aqeko {
+    text-align: left;
+    
+      }
+
+  .aboutSection_teamIntroduction__robwK {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .aboutSection_headline__vseKZ {
+    font-size: 36px; /* Larger font size for larger screens */
+  }
+  .aboutSection_missionStatement__c2pjx,
+  .aboutSection_seoBackground__Aqeko {
+    font-size: 20px; /* Larger font size for larger screens */
+
+  }
+  .aboutSection_teamText__c0597 {
+    font-size: 18px; /* Larger font size for larger screens */
+    
+  }
+
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/contactSection.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.contactSection_contactSection__DpUpG {
+  background: #ffffff; /* Assuming a light theme for the app */
+  color: #333333; /* Dark grey for text for better readability */
+  padding: 20px;
+}
+
+.contactSection_contactSection__DpUpG h2 {
+  color: #0056b3; /* Brand color for headings */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contactSection_contactSection__DpUpG p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+.contactSection_contactSection__DpUpG .contactSection_ctaButton__a__AP {
+  background-color: #28a745; /* Brand color for CTA */
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px; /* Large font for visibility */
+  border: none;
+  border-radius: 4px;
+  display: block; /* Center button */
+  width: 100%; /* Full width for mobile */
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none; /* If the button is a link */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional for depth */
+}
+
+.contactSection_contactSection__DpUpG a.contactSection_link___mANH {
+  color: #009688; /* Brand accent color */
+  text-decoration: underline; /* Indicates interactivity */
+}
+
+/* Add media query for responsiveness if needed */
+@media (max-width: 480px) {
+  .contactSection_contactSection__DpUpG {
+    padding: 15px;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/servicesOffered.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/* Base styles - keep mobile-first approach */
+.servicesOffered_container__UE0CA {
+  margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color */
+  }
+  
+  .servicesOffered_heading__axwit {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .servicesOffered_serviceCard__glDDz {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .servicesOffered_serviceImage__XQx0u {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .servicesOffered_serviceTitle__mWbEu {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .servicesOffered_serviceDescription__LFk5t {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .servicesOffered_concludingStatement__W_YIp {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  /* Larger screen adjustments */
+  @media (min-width: 768px) {
+    .servicesOffered_container__UE0CA {
+      max-width: 1200px; /* Maximum width of the content */
+      margin: auto; /* Center the container */
+      padding: 40px 20px; /* More padding on larger screens */
+    }
+  
+    .servicesOffered_heading__axwit {
+      font-size: 28px; /* Larger font for larger screens */
+      margin: 40px 0; /* More space around the heading */
+    }
+  
+    .servicesOffered_serviceCard__glDDz {
+      display: flex; /* Flex layout for side-by-side image and text */
+      align-items: center; /* Vertically center the content */
+      margin-bottom: 30px; /* Increase space between cards */
+      padding: 20px; /* More padding inside each card */
+    }
+  
+    .servicesOffered_serviceImage__XQx0u {
+      width: 80px; /* Larger image for larger screens */
+      margin-right: 20px; /* Space between image and text */
+    }
+  
+    .servicesOffered_serviceTitle__mWbEu {
+      font-size: 20px; /* Larger font size for service title */
+    }
+  
+    .servicesOffered_serviceDescription__LFk5t {
+      font-size: 18px; /* Slightly larger font size for description */
+    }
+  
+    .servicesOffered_concludingStatement__W_YIp {
+      font-size: 18px; /* Larger font size for concluding statement */
+    }
+  }
+  

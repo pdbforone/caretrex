@@ -220,6 +220,7 @@
     grid-column: 1 / 7; /* Spans first 6 of 12 columns */
     grid-row: 2;
     margin-left: 1rem;
+    position: relative;
   }
 
   .additionalTextContent {
