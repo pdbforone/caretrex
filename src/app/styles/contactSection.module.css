@@ -1,21 +1,37 @@
+/* Baseline styles */
 .contactSection {
-  background: #ffffff; /* Assuming a light theme for the app */
-  color: #333333; /* Dark grey for text for better readability */
-  padding: 20px;
+  background: #ffffff;
+  color: #333333;
+  padding: 40px; /* Adjust padding for larger screens */
 }
 
 .contactSection h2 {
-  color: #0056b3; /* Brand color for headings */
-  font-size: 24px;
+  color: #0056b3;
+  font-size: 32px; /* Larger font size for better readability */
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .contactSection p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px; /* Spacing between paragraphs */
+  font-size: 18px; /* Slightly larger font size */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contactSection .contactInfo {
+  display: flex; /* Flexbox layout for contact details */
+  flex-wrap: wrap;
+  align-items: center; /* Vertically align elements */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.contactSection .contactInfo p {
+  margin-bottom: 0; /* Remove bottom margin for flex items */
+}
+
+.contactSection .icon {
+  margin-right: 10px; /* Space between icons and text */
 }
 
 .contactSection .ctaButton {
@@ -38,9 +54,39 @@
   text-decoration: underline; /* Indicates interactivity */
 }
 
-/* Add media query for responsiveness if needed */
-@media (max-width: 480px) {
+/* Laptops (1024px and above) */
+@media (min-width: 1024px) {
   .contactSection {
-    padding: 15px;
+    display: grid; /* Create a grid layout */
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 40px; /* Space between columns */
+  }
+
+  .contactSection h2 {
+    grid-column: 1 / -1; /* Span both columns for wider heading */
+  }
+
+  .contactSection .contactInfo {
+    grid-column: 1 / -1; /* Span both columns for contact details */
+    text-align: left; /* Left-align contact details */
+  }
+
+  .contactSection .ctaButton {
+    grid-column: 2 / -1; /* Place the button in the right column */
+  }
+}
+
+/* Extra wide screens (1440px and above) */
+@media (min-width: 1440px) {
+  .contactSection {
+    padding: 60px; /* Increase padding for more spaciousness */
+  }
+
+  .contactSection h2 {
+    font-size: 40px; /* Larger heading for extra wide screens */
+  }
+
+  .contactSection p {
+    font-size: 20px; /* Slightly larger text for better readability */
   }
 }

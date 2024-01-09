@@ -26,7 +26,8 @@ const CssNav = () => {
       />
     </div>
 
-    <nav className={styles.smallNav}>
+    <nav className={styles.smallNav}
+    role="navigation">
       <div
         className={`${styles.hamburgerIcon} ${isOpen ? styles.open : ''}`}
         onClick={toggleMenu}

@@ -1,6 +1,7 @@
 
 import Image from 'next/image';
 import styles from '../styles/aboutSection.module.css'; // Make sure the path is correct
+import  aboutImage  from './aboutImage';
 
 export default function About() {
   return (
@@ -11,14 +12,7 @@ export default function About() {
          
       </p>
       <div className={styles.teamIntroduction}>
-        <Image
-          src="/kansas.jpg" // Replace with your image path
-          alt="Our Dedicated Team"
-          layout="responsive"
-          width={900} // These will be used to maintain aspect ratio
-          height={600}
-          className={styles.teamImage}
-        />
+        <aboutImage/>
         <p className={styles.teamText}> Birthed in 2023, we aim to serve the underserved aging and disabled population that is often isolated and/or forgotten.</p>
       </div>
       <p className={styles.seoBackground}>

@@ -13,7 +13,7 @@
   
   .heroSec_heroHeader__7iTt7 {
     font-weight: 700;
-    font-size: 24px; /* Adjusted size for mobile */
+    font-size: 20px; /* Adjusted size for mobile */
     font-family: 'Open Sans', sans-serif;
     color: #003366; /* A color that stands out */
     margin-bottom: 12px; /* Increased space between the title and subtitle */
@@ -23,15 +23,24 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 20px; /* Add whitespace below the image */
+    /* Add whitespace below the image */
     object-fit: cover; /* Prevents image distortion */
+  }
+
+  .heroSec_imageContainer__dXc5Y {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
   }
   
   .heroSec_heroP__z7Gok {
     font-size: 16px; /* Adjusted font size for mobile */
     line-height: 1.4;
     color: #555; /* Slightly muted color for subtitle */
-    padding: 0 20px; /* Increased padding on the sides */
+    width: 300px;
+    
     margin-bottom: 24px; /* Increased space between subtitle and CTA button */
     box-sizing: border-box; /* Ensures padding does not cause overflow */
   }
@@ -41,7 +50,7 @@
   }
   
   .heroSec_flavorButton__bfv3h {
-    font-size: 18px; /* Larger font for easy tapping */
+    font-size: 14px; /* Larger font for easy tapping */
     padding: 15px 30px;
     background-color: #28a745; /* Brand's accent color */
     color: white;
@@ -53,6 +62,7 @@
     max-width: 300px; /* Maximum width to maintain aesthetics */
     margin: 20px auto; /* Centers the button */
     cursor: pointer;
+    Padding: 10px 20px;
   }
 
   /* Hover State */
@@ -75,19 +85,22 @@
   
   @media (max-width: 480px) {
     .heroSec_heroHeader__7iTt7 {
-      font-size: 1.5rem; /* Even smaller on mobiles */
+      font-size: 24px; /* Even smaller on mobiles */
     }
   
     .heroSec_heroP__z7Gok {
-      font-size: 1rem; /* Smaller font size for mobile devices */
+      font-size: 18px; /* Smaller font size for mobile devices */
       padding: 0 5px; /* Reduced padding for mobile devices */
+      width: 100%;
     }
   
     .heroSec_flavorButton__bfv3h {
-      padding: 12px 24px; /* Adjusted padding for smaller screens */
+      padding: 14px 28px; /* Adjusted padding for smaller screens */
       font-size: 16px; /* Adjusted font size for smaller screens */
       width: 90%; /* Increased width for better tap-ability */
     }
+
+    
   }
   /* ... existing styles ... */
 
@@ -174,6 +187,8 @@
   transform: scale(0.95); /* Scale Back */
 }
 
+
+
 }
 
 /* ... existing styles ... */
@@ -189,15 +204,22 @@
     grid-row: 2;
     font-family: 'Open Sans', sans-serif;
     display: block; /* Show additional text */
-    font-size: 20px; /* Larger font size for readability */
+    font-size: 24px; /* Larger font size for readability */
     margin-right: 20px; /* Space before the CTA button */
     text-align: center;
     line-height: 1.4;
     padding: 0 10px;
+    width: 100%;
   }
 
-
+  .heroSec_imageContainer__dXc5Y {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
 }
+
 
 @media screen and(min-width: 1100px) {
   .heroSec_sectionHero__zRFrf {
@@ -226,25 +248,27 @@
     grid-row: 2;
     margin-left: 1rem;
     position: relative;
+    
   }
 
   .heroSec_additionalTextContent__XTdTW {
     grid-column: 7 / 13; /* Spans last 6 of 12 columns */
     grid-row: 2;
     display: block; /* Show additional text */
-    font-size: 20px;
-    text-align: center;
+    font-size: 28px;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
     padding: 0 10px;
     margin-right: 20px;
+    letter-spacing: 0.05em;
   }
 
   .heroSec_flavorButton__bfv3h {
     
     display: inline-block;
     padding: 20px 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     width: auto;
@@ -265,63 +289,21 @@
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/aboutSection.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
+/* Baseline styles */
 .aboutSection_aboutContainer__k1odA {
-  padding: 0 20px; /* Added padding on the sides */
+  padding: 0 20px;
   background-color: #f7f7f7;
-  text-align: center; /* Centered text alignment */
+  text-align: center;
 }
 
 .aboutSection_headline__vseKZ {
   padding-top: 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
   font-weight: bold;
   color: #333;
 }
 
-.aboutSection_missionStatement__c2pjx {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 18px; /* Increased font size for mobile readability */
-  line-height: 1.6;
-  color: #666;
-}
-
-.aboutSection_teamIntroduction__robwK {
-  margin-bottom: 20px;
-}
-
-.aboutSection_teamImage__m_eB7 {
-  max-width: 100%; /* Ensure image is responsive */
-  height: auto;
-  display: block; /* Image block display */
-  border-radius: 8px;
-  margin-bottom: 20px; /* Space below the image */
-}
-
-.aboutSection_teamText__c0597 {
-  font-size: 16px; /* Adjusted font size for readability */
- margin-bottom: 20px;
-}
-
-.aboutSection_seoBackground__Aqeko {
-  font-size: 16px;
-  line-height: 1.6; /* Improved line-height for readability */
-  padding-bottom: 30px;
-}
-
-.aboutSection_learnMoreLink__clqOP {
-  color: #0056b3;
-  font-weight: bold;
-  text-decoration: none; /* Removed underline */
-  padding: 10px 20px; /* Adjusted padding for a button-like appearance */
-  display: inline-block; /* Inline block for padding and background */
-  border-radius: 4px;
-  background-color: #e7f5ff; /* Light blue background for the CTA */
-  margin-top: 20px; /* Added top margin for CTA */
-}
-
-/* Larger screen adjustments */
+/* Smaller screens (768px and above) */
 @media (min-width: 768px) {
   .aboutSection_aboutContainer__k1odA {
     display: grid;
@@ -329,67 +311,126 @@
     grid-gap: 40px;
     gap: 40px;
     padding: 40px;
-    margin: 0;
+    margin: 0 auto;
+    align-items: start;
   }
 
   .aboutSection_headline__vseKZ {
     font-size: 32px;
     grid-column: 1 / -1;
-    text-align: left; /* Align text to the left on larger screens */
+    text-align: left;
   }
 
- 
-
-  /* Left-align the text for larger screens */
   .aboutSection_missionStatement__c2pjx,
   .aboutSection_teamText__c0597,
   .aboutSection_seoBackground__Aqeko {
     text-align: left;
-    
-      }
+  }
 
   .aboutSection_teamIntroduction__robwK {
     grid-column: 1 / -1;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  
+
+  .aboutSection_teamText__c0597 {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .aboutSection_learnMoreLink__clqOP {
+    margin-top: 0;
   }
 }
 
+/* Laptops (1024px and above) */
 @media (min-width: 1024px) {
   .aboutSection_headline__vseKZ {
-    font-size: 36px; /* Larger font size for larger screens */
+    font-size: 36px;
   }
+
   .aboutSection_missionStatement__c2pjx,
   .aboutSection_seoBackground__Aqeko {
-    font-size: 20px; /* Larger font size for larger screens */
-
+    font-size: 20px;
   }
+
   .aboutSection_teamText__c0597 {
-    font-size: 18px; /* Larger font size for larger screens */
-    
+    font-size: 18px;
+  }
+}
+
+/* Extra wide screens (1440px and above) */
+@media (min-width: 1440px) {
+  .aboutSection_aboutContainer__k1odA {
+    grid-template-columns: repeat(3, 1fr); /* Adjust columns for wider layout */
+    gap: 80px; /* Increase gap for better breathing room */
+    padding: 80px; /* Increase padding for spaciousness */
   }
 
+  .aboutSection_headline__vseKZ {
+    grid-column: 1 / 2; /* Span two columns for wider headline on extra wide screens */
+  
+  }
+
+  .aboutSection_teamIntroduction__robwK {
+    grid-column: 2 / -1; /* Place image section in the center column */
+  }
+
+  .aboutSection_missionStatement__c2pjx,
+  .aboutSection_teamText__c0597,
+  .aboutSection_seoBackground__Aqeko {
+    line-height: 1.8; /* Increase line-height for improved readability */
+    letter-spacing: 0.05em;
+  }
+
+ 
+
+  .aboutSection_learnMoreLink__clqOP {
+    padding: 15px 30px; /* Increase padding for better visibility */
+    font-size: 16px; /* Maintain consistent font size */
+  }
 }
 
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/contactSection.module.css ***!
   \************************************************************************************************************************************************************************************************************************************************************************************/
+/* Baseline styles */
 .contactSection_contactSection__DpUpG {
-  background: #ffffff; /* Assuming a light theme for the app */
-  color: #333333; /* Dark grey for text for better readability */
-  padding: 20px;
+  background: #ffffff;
+  color: #333333;
+  padding: 40px; /* Adjust padding for larger screens */
 }
 
 .contactSection_contactSection__DpUpG h2 {
-  color: #0056b3; /* Brand color for headings */
-  font-size: 24px;
+  color: #0056b3;
+  font-size: 32px; /* Larger font size for better readability */
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .contactSection_contactSection__DpUpG p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px; /* Spacing between paragraphs */
+  font-size: 18px; /* Slightly larger font size */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contactSection_contactSection__DpUpG .contactSection_contactInfo___gZlc {
+  display: flex; /* Flexbox layout for contact details */
+  flex-wrap: wrap;
+  align-items: center; /* Vertically align elements */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+.contactSection_contactSection__DpUpG .contactSection_contactInfo___gZlc p {
+  margin-bottom: 0; /* Remove bottom margin for flex items */
+}
+
+.contactSection_contactSection__DpUpG .contactSection_icon__eOil0 {
+  margin-right: 10px; /* Space between icons and text */
 }
 
 .contactSection_contactSection__DpUpG .contactSection_ctaButton__a__AP {
@@ -412,10 +453,41 @@
   text-decoration: underline; /* Indicates interactivity */
 }
 
-/* Add media query for responsiveness if needed */
-@media (max-width: 480px) {
+/* Laptops (1024px and above) */
+@media (min-width: 1024px) {
   .contactSection_contactSection__DpUpG {
-    padding: 15px;
+    display: grid; /* Create a grid layout */
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    grid-gap: 40px;
+    gap: 40px; /* Space between columns */
+  }
+
+  .contactSection_contactSection__DpUpG h2 {
+    grid-column: 1 / -1; /* Span both columns for wider heading */
+  }
+
+  .contactSection_contactSection__DpUpG .contactSection_contactInfo___gZlc {
+    grid-column: 1 / -1; /* Span both columns for contact details */
+    text-align: left; /* Left-align contact details */
+  }
+
+  .contactSection_contactSection__DpUpG .contactSection_ctaButton__a__AP {
+    grid-column: 2 / -1; /* Place the button in the right column */
+  }
+}
+
+/* Extra wide screens (1440px and above) */
+@media (min-width: 1440px) {
+  .contactSection_contactSection__DpUpG {
+    padding: 60px; /* Increase padding for more spaciousness */
+  }
+
+  .contactSection_contactSection__DpUpG h2 {
+    font-size: 40px; /* Larger heading for extra wide screens */
+  }
+
+  .contactSection_contactSection__DpUpG p {
+    font-size: 20px; /* Slightly larger text for better readability */
   }
 }
 

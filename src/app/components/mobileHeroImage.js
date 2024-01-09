@@ -3,9 +3,11 @@ import styles from '../styles/heroSec.module.css';
 export function HeroImage() {
     return <Image src="/Nursepatientvan.png" 
       alt="Professional nurse assisting client in a modern medical transport vehicle"
-      height="250" 
-      width="250"
-      layout="responsive" 
+      sizes="540px"
+      fill
       priority={true}
-      className={styles.imageLeft}/>
+      style={{
+        objectFit: 'contain'
+      }}
+      />
 }

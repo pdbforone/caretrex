@@ -10,7 +10,7 @@
   
   .heroHeader {
     font-weight: 700;
-    font-size: 24px; /* Adjusted size for mobile */
+    font-size: 20px; /* Adjusted size for mobile */
     font-family: 'Open Sans', sans-serif;
     color: #003366; /* A color that stands out */
     margin-bottom: 12px; /* Increased space between the title and subtitle */
@@ -20,15 +20,24 @@
     max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 20px; /* Add whitespace below the image */
+    /* Add whitespace below the image */
     object-fit: cover; /* Prevents image distortion */
+  }
+
+  .imageContainer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
   }
   
   .heroP {
     font-size: 16px; /* Adjusted font size for mobile */
     line-height: 1.4;
     color: #555; /* Slightly muted color for subtitle */
-    padding: 0 20px; /* Increased padding on the sides */
+    width: 300px;
+    
     margin-bottom: 24px; /* Increased space between subtitle and CTA button */
     box-sizing: border-box; /* Ensures padding does not cause overflow */
   }
@@ -38,7 +47,7 @@
   }
   
   .flavorButton {
-    font-size: 18px; /* Larger font for easy tapping */
+    font-size: 14px; /* Larger font for easy tapping */
     padding: 15px 30px;
     background-color: #28a745; /* Brand's accent color */
     color: white;
@@ -50,6 +59,7 @@
     max-width: 300px; /* Maximum width to maintain aesthetics */
     margin: 20px auto; /* Centers the button */
     cursor: pointer;
+    Padding: 10px 20px;
   }
 
   /* Hover State */
@@ -72,19 +82,22 @@
   
   @media (max-width: 480px) {
     .heroHeader {
-      font-size: 1.5rem; /* Even smaller on mobiles */
+      font-size: 24px; /* Even smaller on mobiles */
     }
   
     .heroP {
-      font-size: 1rem; /* Smaller font size for mobile devices */
+      font-size: 18px; /* Smaller font size for mobile devices */
       padding: 0 5px; /* Reduced padding for mobile devices */
+      width: 100%;
     }
   
     .flavorButton {
-      padding: 12px 24px; /* Adjusted padding for smaller screens */
+      padding: 14px 28px; /* Adjusted padding for smaller screens */
       font-size: 16px; /* Adjusted font size for smaller screens */
       width: 90%; /* Increased width for better tap-ability */
     }
+
+    
   }
   /* ... existing styles ... */
 
@@ -170,6 +183,8 @@
   transform: scale(0.95); /* Scale Back */
 }
 
+
+
 }
 
 /* ... existing styles ... */
@@ -185,15 +200,22 @@
     grid-row: 2;
     font-family: 'Open Sans', sans-serif;
     display: block; /* Show additional text */
-    font-size: 20px; /* Larger font size for readability */
+    font-size: 24px; /* Larger font size for readability */
     margin-right: 20px; /* Space before the CTA button */
     text-align: center;
     line-height: 1.4;
     padding: 0 10px;
+    width: 100%;
   }
 
-
+  .imageContainer {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
 }
+
 
 @media screen and(min-width: 1100px) {
   .sectionHero {
@@ -221,25 +243,27 @@
     grid-row: 2;
     margin-left: 1rem;
     position: relative;
+    
   }
 
   .additionalTextContent {
     grid-column: 7 / 13; /* Spans last 6 of 12 columns */
     grid-row: 2;
     display: block; /* Show additional text */
-    font-size: 20px;
-    text-align: center;
+    font-size: 28px;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
     padding: 0 10px;
     margin-right: 20px;
+    letter-spacing: 0.05em;
   }
 
   .flavorButton {
     
     display: inline-block;
     padding: 20px 40px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     width: auto;
