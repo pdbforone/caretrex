@@ -1,5 +1,6 @@
 import styles from '../styles/contactSection.module.css';
-import { handleCallSupport } from './handleCallSupport';
+import Image from 'next/image';
+
 
 export default function Contact() {
   return (
@@ -14,7 +15,12 @@ export default function Contact() {
         <p><i className={`${styles.icon} ${styles.iconEnvelope}`}></i><a className={styles.link} href="mailto:info@caretrex.com">rexisthebest5@gmail.com</a></p>
         <p><i className={`${styles.icon} ${styles.iconLocation}`}></i>2900 Willow St. Hays KS, 67601</p>
       </div>
-      <button className={styles.ctaButton} onClick={handleCallSupport}>Contact Us</button>
+      <Image
+      src='/B+W.png'
+      width={100}
+      height={100}
+      alt="Black and White CareTrex Logo"
+      />
     </section>
   );
 }

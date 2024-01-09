@@ -4,7 +4,7 @@ export default function ServicesOffered ()  {
         {
           icon: '/rex.jpg', // Replace with your image path
           title: 'Nurse-Assisted Medical Transport',
-          description: '- Non-emergency medical transport within Hays: Monday - Friday. Longer transports and trips are available by appointment.',
+          description: 'Non-emergency medical transport within Hays: Monday - Friday. Longer transports and trips are available by appointment.',
         },
         // ... other services
       ];

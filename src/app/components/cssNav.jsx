@@ -17,14 +17,14 @@ const CssNav = () => {
 
     <header className = {styles.smallHeader}>
 
-
-    <Image src="/CareTrexLogosmall.png" 
-      width={100}
+    <div className= {styles.smallLogoContainer}>
+    <Image src="/Logo.png" 
+      width={50}
       height={50}
       alt='The Company Logo For CareTrex'
       className={styles.imageM}
       />
-
+    </div>
 
     <nav className={styles.smallNav}>
       <div
@@ -51,11 +51,11 @@ const CssNav = () => {
     
       <nav className={styles.largeNav}>
       <div className={styles.logoTop}>
-      <Image src="/CareTrex Logo.png" 
+      <Image src="/Logo.png" 
       width={100}
       height={80}
       alt='The Company Logo for CareTrex'
-      className={styles.imageM}
+      className={styles.image}
       />
       </div>
         <ul className={styles.largeUlist}>
@@ -66,7 +66,7 @@ const CssNav = () => {
             <Link href="/About"><span>About</span></Link>
           </li>
           <li>
-            <Link href="/Contact"><span>Book A Ride</span></Link>
+            <Link href="/Contact"><span>Contact Us</span></Link>
           </li>
         </ul>
         <div className={styles.extraImage}>

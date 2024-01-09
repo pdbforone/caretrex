@@ -13,14 +13,7 @@ import {
       icon: faSquareFacebook ,
       url: "www.facebook.com"
     },
-    {
-      icon: faSquareInstagram,
-      url: "www.instagram.com"
-    },
-    {
-      icon: faSquareXTwitter,
-      url: "www.twitter.com"
-    },
+  
   ];
 
 

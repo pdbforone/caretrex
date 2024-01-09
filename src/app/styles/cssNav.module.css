@@ -22,7 +22,16 @@
 .imageM {
   grid-row: 1;
   grid-column: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+ 
+ 
 
+}
+.smallLogoContainer {
+ 
+  padding: 5px 5px 0px 5px;
+  height: 60px;
 }
 
 .smallNav {
@@ -152,7 +161,7 @@
     padding: 0;
     margin-top: auto;
     margin-bottom: auto;
-  }
+    }
   .largeUlist{
     margin-top: auto;
     margin-bottom: auto;

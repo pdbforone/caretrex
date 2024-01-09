@@ -483,7 +483,16 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 .cssNav_imageM__I327j {
   grid-row: 1;
   grid-column: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+ 
+ 
 
+}
+.cssNav_smallLogoContainer__GOjw3 {
+ 
+  padding: 5px 5px 0px 5px;
+  height: 60px;
 }
 
 .cssNav_smallNav__f1Dxt {
@@ -614,7 +623,7 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     padding: 0;
     margin-top: auto;
     margin-bottom: auto;
-  }
+    }
   .cssNav_largeUlist___SRqO{
     margin-top: auto;
     margin-bottom: auto;

@@ -12,7 +12,7 @@ export default function About() {
       </p>
       <div className={styles.teamIntroduction}>
         <Image
-          src="/CareTrexAbout.png" // Replace with your image path
+          src="/kansas.jpg" // Replace with your image path
           alt="Our Dedicated Team"
           layout="responsive"
           width={900} // These will be used to maintain aspect ratio
