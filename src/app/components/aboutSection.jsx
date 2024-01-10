@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import styles from '../styles/aboutSection.module.css'; // Make sure the path is correct
-import  aboutImage  from './aboutImage';
+import { AboutImage } from './AboutImage';
 
 export default function About() {
   return (
@@ -12,7 +12,9 @@ export default function About() {
          
       </p>
       <div className={styles.teamIntroduction}>
-        <aboutImage/>
+      <div className={styles.aboutImage}>
+        <AboutImage/>
+        </div>
         <p className={styles.teamText}> Birthed in 2023, we aim to serve the underserved aging and disabled population that is often isolated and/or forgotten.</p>
       </div>
       <p className={styles.seoBackground}>

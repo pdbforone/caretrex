@@ -12,6 +12,15 @@
   color: #333;
 }
 
+.aboutImage {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 /* Smaller screens (768px and above) */
 @media (min-width: 768px) {
   .aboutContainer {
@@ -40,13 +49,24 @@
     margin-bottom: 0;
     position: relative;
   }
-
-  
+  .aboutImage {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .teamImage {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
 
   .teamText {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
+    width: 500px;
   }
 
   .learnMoreLink {

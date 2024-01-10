@@ -1,15 +1,13 @@
-import Image from "next/image"
-import styles from "../styles/aboutSection.module.css"
-
-export function aboutImage() {
-<Image
-alt="A photo of the countryside in Kansas"
-src="/kansas.jpg" // Replace with your image path
-sizes='540px'
-priority={true}
-style={{
-  objectFit: 'contain'
-}}
-className={styles.teamImage}
-/>
-};
+import Image from "next/image";
+import styles from '../styles/aboutSection.module.css';
+export function AboutImage() {
+    return <Image src="/kansas.jpg" 
+      alt="Photo of Kansas"
+      sizes="540px"
+      fill
+      priority={true}
+      style={{
+        objectFit: 'contain'
+      }}
+      />
+    }

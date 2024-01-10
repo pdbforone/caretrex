@@ -11,6 +11,7 @@ export default function ServicesOffered ()  {
     
       return (
         <section id="services" className={styles.container}>
+        <div className={styles.box}>
           <h2 className={styles.heading}>Our Services – Tailored to Your Needs</h2>
           {services.map((service, index) => (
             <div key={index} className={styles.serviceCard}>
@@ -22,6 +23,7 @@ export default function ServicesOffered ()  {
           <p className={styles.concludingStatement}>
             Our services are designed with your health and safety as our top priority.
           </p>
+          </div>
         </section>
       );
     };

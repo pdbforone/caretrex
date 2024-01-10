@@ -692,6 +692,41 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
   }
 }
 
+@media screen and (min-width: 1512px) {
+  .cssNav_largeNav__9S4_7 {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: 1fr, middle;
+    grid-column-gap: 50px;
+    column-gap: 50px;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 650;
+    background-color: #007bff;
+    
+  }
+  .cssNav_logoTop__ouckn {
+    grid-column: 3/4;
+    width: 15%;
+    height: 84px;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    }
+  .cssNav_largeUlist___SRqO{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    grid-column: 9;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: Hex #ffffff;
+    justify-content: center;
+}}
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/styles/footer.module.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/

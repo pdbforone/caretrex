@@ -23,6 +23,7 @@ const CssNav = () => {
       height={50}
       alt='The Company Logo For CareTrex'
       className={styles.imageM}
+      priority={true}
       />
     </div>
 

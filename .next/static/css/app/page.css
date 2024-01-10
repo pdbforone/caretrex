@@ -303,6 +303,15 @@
   color: #333;
 }
 
+.aboutSection_aboutImage___JLeT {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 /* Smaller screens (768px and above) */
 @media (min-width: 768px) {
   .aboutSection_aboutContainer__k1odA {
@@ -332,13 +341,24 @@
     margin-bottom: 0;
     position: relative;
   }
-
-  
+  .aboutSection_aboutImage___JLeT {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .aboutSection_teamImage__m_eB7 {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
 
   .aboutSection_teamText__c0597 {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
+    width: 500px;
   }
 
   .aboutSection_learnMoreLink__clqOP {
@@ -496,10 +516,16 @@
   \*************************************************************************************************************************************************************************************************************************************************************************************/
 /* Base styles - keep mobile-first approach */
 .servicesOffered_container__UE0CA {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  }
+
+.servicesOffered_box__6nQC0 {
   margin: 0;
     padding: 20px;
     background-color: #f9f9f9; /* Example background color */
-  }
+}
   
   .servicesOffered_heading__axwit {
     font-family: 'Roboto', sans-serif;
@@ -543,7 +569,7 @@
   /* Larger screen adjustments */
   @media (min-width: 768px) {
     .servicesOffered_container__UE0CA {
-      max-width: 1200px; /* Maximum width of the content */
+      
       margin: auto; /* Center the container */
       padding: 40px 20px; /* More padding on larger screens */
     }
@@ -577,4 +603,8 @@
       font-size: 18px; /* Larger font size for concluding statement */
     }
   }
-  
+  @media (min-width: 1440px) {
+    .servicesOffered_serviceDescription__LFk5t {
+      padding-left: 10px;
+    }
+  }
