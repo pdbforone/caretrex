@@ -694,17 +694,8 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 
 @media screen and (min-width: 1512px) {
   .cssNav_largeNav__9S4_7 {
-    width: 100%;
-    height: 100px;
-    display: grid;
     grid-template-columns: repeat(16, auto);
-    grid-template-rows: 1fr, middle;
-    grid-column-gap: 50px;
-    column-gap: 50px;
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 650;
-    background-color: #007bff;
+    grid-template-rows: 1;
     
   }
   .cssNav_logoTop__ouckn {
@@ -717,10 +708,10 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     margin-bottom: auto;
     }
   .cssNav_largeUlist___SRqO{
-    margin-top: auto;
-    margin-bottom: auto;
+    
     padding: 0;
-    grid-column: 9;
+    grid-column: 8/9;
+    grid-row: 1;
     display: flex;
     flex-direction: row;
     list-style: none;
