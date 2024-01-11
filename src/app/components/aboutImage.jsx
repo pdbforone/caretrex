@@ -6,8 +6,6 @@ export function AboutImage() {
       sizes="540px"
       fill
       priority={true}
-      style={{
-        objectFit: 'contain'
-      }}
+      
       />
     }
