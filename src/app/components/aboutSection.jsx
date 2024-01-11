@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import styles from '../styles/aboutSection.module.css'; // Make sure the path is correct
-import { AboutImage } from './AboutImage';
+import { AboutImage } from './aboutImage';
 
 export default function About() {
   return (
