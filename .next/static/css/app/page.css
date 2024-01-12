@@ -262,6 +262,7 @@
     padding: 0 10px;
     margin-right: 20px;
     letter-spacing: 0.05em;
+    max-width: 500px;
   }
 
   .heroSec_flavorButton__bfv3h {
@@ -316,10 +317,11 @@
 @media (min-width: 768px) {
   .aboutSection_aboutContainer__k1odA {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     grid-gap: 40px;
     gap: 40px;
-    padding: 40px;
+    
     margin: 0 auto;
     align-items: start;
   }
@@ -327,34 +329,48 @@
   .aboutSection_headline__vseKZ {
     font-size: 32px;
     grid-column: 1 / -1;
+    grid-row: 1;
     text-align: left;
   }
 
   .aboutSection_missionStatement__c2pjx,
   .aboutSection_teamText__c0597,
   .aboutSection_seoBackground__Aqeko {
+    grid-column: 1 / -1;
     text-align: left;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aboutSection_missionStatement__c2pjx {
+    grid-row: 2;
+   
   }
 
   .aboutSection_teamIntroduction__robwK {
     grid-column: 1 / -1;
+    grid-row: 2;
     margin-bottom: 0;
     position: relative;
+    
   }
   .aboutSection_aboutImage___JLeT {
+    margin-top: 80px;
     position: relative;
     width: 400px;
     height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    
     
   }
-  .aboutSection_teamImage__m_eB7 {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
 
+  .aboutSection_mobileImage__5YwYo {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+  
   .aboutSection_teamText__c0597 {
+    grid-row: 4;
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -369,6 +385,7 @@
 /* Laptops (1024px and above) */
 @media (min-width: 1024px) {
   .aboutSection_headline__vseKZ {
+    padding-left: 40px;
     font-size: 36px;
   }
 
@@ -385,23 +402,38 @@
 /* Extra wide screens (1440px and above) */
 @media (min-width: 1440px) {
   .aboutSection_aboutContainer__k1odA {
-    grid-template-columns: repeat(3, 1fr); /* Adjust columns for wider layout */
-    gap: 80px; /* Increase gap for better breathing room */
-    padding: 80px; /* Increase padding for spaciousness */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns for wider layout */
+    
+   
   }
 
-  .aboutSection_headline__vseKZ {
-    grid-column: 1 / 2; /* Span two columns for wider headline on extra wide screens */
-  
-  }
+
 
   .aboutSection_teamIntroduction__robwK {
     grid-column: 2 / -1; /* Place image section in the center column */
   }
 
+  .aboutSection_aboutImage___JLeT {
+    display: grid;
+    grid-column: 1/-1;
+    position: relative;
+    width: 500;
+    height: 600;
+    text-align: center;
+  }
+
+  .aboutSection_mobileImage__5YwYo {
+    padding-right: 40px;
+  }
+
+  .aboutSection_aboutImage___JLeT .aboutSection_mobileImage__5YwYo {
+    grid-column: 3;
+  }
   .aboutSection_missionStatement__c2pjx,
   .aboutSection_teamText__c0597,
   .aboutSection_seoBackground__Aqeko {
+   
     line-height: 1.8; /* Increase line-height for improved readability */
     letter-spacing: 0.05em;
   }
@@ -468,6 +500,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional for depth */
 }
 
+.contactSection_bWBox__EBqvk {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.contactSection_bW__jVo2k {
+  display: inline-block;
+
+}
+
 .contactSection_contactSection__DpUpG a.contactSection_link___mANH {
   color: #009688; /* Brand accent color */
   text-decoration: underline; /* Indicates interactivity */
@@ -494,10 +538,20 @@
   .contactSection_contactSection__DpUpG .contactSection_ctaButton__a__AP {
     grid-column: 2 / -1; /* Place the button in the right column */
   }
-}
+  .contactSection_bWBox__EBqvk {
+    grid-column: 1 / -1;
+}}
 
 /* Extra wide screens (1440px and above) */
 @media (min-width: 1440px) {
+
+  .contactSection_bWBox__EBqvk {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+  }
   .contactSection_contactSection__DpUpG {
     padding: 60px; /* Increase padding for more spaciousness */
   }

@@ -25,9 +25,10 @@
 @media (min-width: 768px) {
   .aboutContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     gap: 40px;
-    padding: 40px;
+    
     margin: 0 auto;
     align-items: start;
   }
@@ -35,34 +36,48 @@
   .headline {
     font-size: 32px;
     grid-column: 1 / -1;
+    grid-row: 1;
     text-align: left;
   }
 
   .missionStatement,
   .teamText,
   .seoBackground {
+    grid-column: 1 / -1;
     text-align: left;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .missionStatement {
+    grid-row: 2;
+   
   }
 
   .teamIntroduction {
     grid-column: 1 / -1;
+    grid-row: 2;
     margin-bottom: 0;
     position: relative;
+    
   }
   .aboutImage {
+    margin-top: 80px;
     position: relative;
     width: 400px;
     height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    
     
   }
-  .teamImage {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
 
+  .mobileImage {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+  
   .teamText {
+    grid-row: 4;
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -77,6 +92,7 @@
 /* Laptops (1024px and above) */
 @media (min-width: 1024px) {
   .headline {
+    padding-left: 40px;
     font-size: 36px;
   }
 
@@ -93,23 +109,38 @@
 /* Extra wide screens (1440px and above) */
 @media (min-width: 1440px) {
   .aboutContainer {
-    grid-template-columns: repeat(3, 1fr); /* Adjust columns for wider layout */
-    gap: 80px; /* Increase gap for better breathing room */
-    padding: 80px; /* Increase padding for spaciousness */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns for wider layout */
+    
+   
   }
 
-  .headline {
-    grid-column: 1 / 2; /* Span two columns for wider headline on extra wide screens */
-  
-  }
+
 
   .teamIntroduction {
     grid-column: 2 / -1; /* Place image section in the center column */
   }
 
+  .aboutImage {
+    display: grid;
+    grid-column: 1/-1;
+    position: relative;
+    width: 500;
+    height: 600;
+    text-align: center;
+  }
+
+  .mobileImage {
+    padding-right: 40px;
+  }
+
+  .aboutImage .mobileImage {
+    grid-column: 3;
+  }
   .missionStatement,
   .teamText,
   .seoBackground {
+   
     line-height: 1.8; /* Increase line-height for improved readability */
     letter-spacing: 0.05em;
   }

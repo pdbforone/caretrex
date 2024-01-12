@@ -56,6 +56,7 @@ const CssNav = () => {
       <Image src="/Logo.png" 
       width={100}
       height={80}
+      priority={true}
       alt='The Company Logo for CareTrex'
       className={styles.image}
       />
@@ -71,9 +72,7 @@ const CssNav = () => {
             <Link href="/Contact"><span>Contact Us</span></Link>
           </li>
         </ul>
-        <div className={styles.extraImage}>
-          
-        </div>
+       
       </nav>
    </header>
     </>

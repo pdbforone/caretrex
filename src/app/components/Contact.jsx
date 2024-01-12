@@ -15,12 +15,18 @@ export default function Contact() {
         <p><i className={`${styles.icon} ${styles.iconEnvelope}`}></i><a className={styles.link} href="mailto:info@caretrex.com">rexisthebest5@gmail.com</a></p>
         <p><i className={`${styles.icon} ${styles.iconLocation}`}></i>2900 Willow St. Hays KS, 67601</p>
       </div>
+      <div
+      className={styles.bWBox}
+      >
       <Image
       src='/B+W.png'
       width={100}
       height={100}
       alt="Black and White CareTrex Logo"
+      className={styles.bW}
+      priority={true}
       />
+      </div>
     </section>
   );
 }

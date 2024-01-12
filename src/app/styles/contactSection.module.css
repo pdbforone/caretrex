@@ -49,6 +49,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional for depth */
 }
 
+.bWBox {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.bW {
+  display: inline-block;
+
+}
+
 .contactSection a.link {
   color: #009688; /* Brand accent color */
   text-decoration: underline; /* Indicates interactivity */
@@ -74,10 +86,20 @@
   .contactSection .ctaButton {
     grid-column: 2 / -1; /* Place the button in the right column */
   }
-}
+  .bWBox {
+    grid-column: 1 / -1;
+}}
 
 /* Extra wide screens (1440px and above) */
 @media (min-width: 1440px) {
+
+  .bWBox {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+  }
   .contactSection {
     padding: 60px; /* Increase padding for more spaciousness */
   }
