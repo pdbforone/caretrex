@@ -17,9 +17,7 @@ export default function About() {
         </div>
         <p className={styles.teamText}> Birthed in 2023, we aim to serve the underserved aging and disabled population that is often isolated and/or forgotten.</p>
       </div>
-      <p className={styles.seoBackground}>
-        <a className={styles.learnMoreLink} href="/about">Learn more about our journey.</a>
-      </p>
+      
     </section>
   );
 }
